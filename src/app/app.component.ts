@@ -32,7 +32,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage, icon: 'home' },
-      { title: 'Histórico', component: ListPage, icon: 'pin' }
+      { title: 'Histórico', component: ListPage, icon: 'pin' },
+      { title: 'Pagamento', component: ListPage, icon: 'cash' }
+     
     ];
 
   }
@@ -85,6 +87,24 @@ export class MyApp {
             console.log('Saved clicked');
           }
         }
+      ]
+    });
+
+    alert.present();
+  }
+   doPromptContato() {
+    let alert = this.Alert.create({
+      title: '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCONTATO',
+      subTitle: '<p>TELEFONE:<br>199957962 <br/> <br>E-MAIL: suporte@interakt.com.br</p><br><br> Equipe Smart Security.',    
+ 
+      buttons: [
+        {
+          text: 'Voltar',
+          handler: (data: any) => {
+            console.log('Cancel clicked');
+          }
+        },
+        
       ]
     });
 
