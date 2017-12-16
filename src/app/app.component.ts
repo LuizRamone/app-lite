@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { NavController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AlertController } from 'ionic-angular';
-
+import { PagamentoPage } from '../pages/pagamento/pagamento';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
@@ -31,9 +31,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'home' },
+      { title: 'Tela Inicial', component: HomePage, icon: 'home' },
       { title: 'Histórico', component: ListPage, icon: 'pin' },
-      { title: 'Pagamento', component: ListPage, icon: 'cash' }
+      { title: 'Pagamento', component: PagamentoPage, icon: 'cash' }
      
     ];
 
